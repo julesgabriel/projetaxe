@@ -1,0 +1,2336 @@
+/* -------------------------------------------------- Global ---------------------------------------------------------- */
+@font-face {
+    font-family: 'bebasregular';
+    src: url("font/Bebas-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* changer la typographie */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* enlever tout les margin et padding par défaut */
+
+/* -----------------------------------------------Fin Global ---------------------------------------------------------- */
+
+
+/* -------------------------------------------------- index ----------------------------------------------------------- */
+
+.degagelo {
+    width: 100%;
+    height: 1000px;
+}
+
+.conteneurlogo {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    background-image: linear-gradient(to right, #fe0000, #c20023, #820326, #420f1d, #000000);
+    padding-bottom: 50px;
+    padding-top: 10px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+}
+
+.logo {
+    width: 125px;
+    height: 45px;
+}
+
+.containerlogosign {
+    width: 100%;
+    height: 50px;
+    padding-top: 1px;
+    background-color: gray;
+    border-style: solid;
+    border-bottom-style: none;
+    padding-left: 700px;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, #fe0000, #c20023, #820326, #420f1d, #000000); /* dégradé vers la droite */
+}
+
+.logo {
+    margin: auto;
+    width: 125px;
+    height: 45px;
+}
+
+.Carouselinner img {
+    margin: 0;
+    border-style: solid;
+}
+
+main {
+    width: 100%;
+    background-color: rgb(105, 24, 30);
+}
+
+html, body {
+    min-height: 100%;
+    position: relative;
+    font-family: bebasregular;
+}
+
+.Spidey {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.titrehero {
+    text-align: center;
+}
+
+.positioncont {
+    display: flex;
+    justify-content: center;
+}
+
+.style_contenu {
+    width: 80%;
+    padding-bottom: 15px;
+    background-image: url("images/spiderman-4k-logo-background-4k.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 5px;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 80px;
+}
+
+.style_contenu2 {
+    width: 80%;
+    background-image: url("images/spider.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 5px;
+    padding-right: 12px;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 30px;
+}
+
+.titrehero {
+    height: 40px;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+.positioncont {
+    display: flex;
+    justify-content: center;
+}
+
+.contenuhero {
+    width: 100%;
+    height: 330px;
+    margin-top: 30px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenuhero2 {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 14px;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.Spiderman_show {
+    width: 33%;
+    height: 320px;
+    background-image: url("images/Peter-Parker_presentation.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 5px;
+}
+
+.Miles_show {
+    width: 32%;
+    height: 300px;
+    background-image: url("images/Miles.png");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid white;
+
+}
+
+.cont1 {
+    width: 45%;
+    height: fit-content;
+    padding: 30px;
+    margin-left: 70px;
+    text-align: justify;
+    font-size: 15px;
+    border: 1px solid white;
+    background-color: rgba(222, 222, 222, 0.5);
+    color: black;
+}
+
+.cont1 p a {
+    color: black;
+}
+
+.principauxantagonistes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: fit-content;
+    margin-top: 40px;
+}
+
+
+.principauxantagonistes2 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 35px;
+}
+
+.antagoniste {
+    width: 250px;
+    height: fit-content;
+    border: 1px solid #fff;
+    font-size: 14px;
+    text-align: justify;
+    background-color: rgba(222, 222, 222, 0.5);
+    background-size: cover;
+    color: black;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.2s; /* animation, lui donner 0.2s avabt de mette l'opacité à un */
+}
+
+
+.antagoniste2 {
+    width: 250px;
+    height: 345px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    text-align: justify;
+    background-color: rgba(222, 222, 222, 0.5);
+    background-size: cover;
+    color: black;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.2s; /* animation, lui donner 0.2s avabt de mette l'opacité à un */
+}
+
+.cont2 {
+    width: 40%;
+    height: fit-content;
+    text-align: justify;
+    font-size: 15px;
+    background-color: rgba(222, 222, 222, 0.5);
+    color: black;
+    padding: 30px;
+    border: 1px solid #fff;
+    margin-left: 20px;
+}
+
+footer {
+    width: 100%;
+    height: fit-content;
+    background-color: grey;
+    display: flex;
+    border-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    background-image: linear-gradient(to left, #fe0000, #c20023, #820326, #420f1d, #000000);
+    padding-bottom: 35px;
+}
+
+.Informations {
+    width: 33%;
+    height: fit-content;
+    display: block;
+}
+
+.titlefooter {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footerspaceblank {
+    text-align: center;
+    font-family: bebasregular;
+}
+
+.footerspaceblank a {
+    text-decoration: none;
+    color: white;
+}
+
+.contenuinfo {
+    width: 100%;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.contenuinfo a {
+    color: white;
+    text-decoration: none;
+}
+
+.divplandusite {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.divcontact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.divmentions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footerspaceblank {
+    width: 34%;
+}
+
+.reseauxsociaux {
+    width: 33%;
+    height: fit-content;
+}
+
+#contenureseaux {
+    display: flex;
+    justify-content: center;
+}
+
+.marginlogo {
+    margin-left: 4px;
+}
+
+footer img {
+    width: auto;
+}
+
+.logofacebook {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.logolinkedin {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.logosite {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+/* Mentions Légales */
+
+.titremention {
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.titremention:nth-child(1) {
+    border-top-style: none;
+}
+
+.justify {
+    text-align: justify;
+    margin-left: 5px;
+    font-family: Montserrat;
+}
+
+.pushtop {
+    margin-top: 100px;
+}
+
+/* fin mentions légales */
+/* inscription connexion */
+
+.positionform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    padding: 5px 0 143px 0;
+}
+
+.styleconnins {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* fin  inscription-connexion*/
+
+/* ------------------------------------------STYLE DES ARTICLES ---------------------------------------------------*/
+
+
+.profilint {
+    text-decoration: none;
+    color: white;
+}
+
+.articlecontact {
+    text-align: left;
+}
+
+.ajd a {
+    text-decoration: none;
+    color: white;
+}
+
+.ajd a:hover {
+    color: blue;
+}
+
+.smallimages {
+    width: 200px;
+    height: 200px;
+}
+
+.styleliprofimages {
+    margin-bottom: 15px;
+
+}
+
+.articlecinemaimg {
+    text-align: center;
+}
+
+.articlecinemaimg img {
+    border: 1px solid white;
+}
+
+.ulclassimgprof {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 80px 0;
+    text-align: justify;
+}
+
+
+.articlecontact {
+    width: 80%;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 300px;
+    border: 2px solid white;
+}
+
+.articlecontact li {
+    border: 2px solid white;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.membrelol {
+    display: flex;
+    justify-content: left;
+    width: 20.6%;
+    max-height: 100px;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 150px;
+    border: 2px solid white;
+    padding-bottom: 10px;
+}
+
+.lisuf {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.membre {
+    width: 100%;
+    height: fit-content;
+    border: solid 1px white;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 0 15px 5px 15px;
+}
+
+.membrecontact li {
+    text-align: left;
+    width: 100%;
+    border: 1px solid white;
+    list-style: none;
+
+}
+
+.ulclassimgprof li {
+    margin-top: 30px;
+}
+
+.ulclassimgprof a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.ulclassimgprof a:hover {
+    color: blue;
+}
+
+/*---------------------------------------------- FIN DU STYLE DES ARTICLES------------------------------------------*/
+/* -----------------------------------------------fin index ----------------------------------------------------------- */
+
+
+/*Bouton css défilement doux jusqu'en haut*/
+
+#button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding-left: 10px;
+    font-size: 35px;
+    width: 50px;
+    height: 50px;
+    background: blue;
+    color: darkred;
+    border: none;
+    cursor: pointer;
+}
+
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 15px;
+    margin: 0 40px 0 0;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 60px;
+    z-index: 15;
+    text-align: center;
+    background-image: linear-gradient(to right, #fe0000, #c20023, #820326, #420f1d, #000000);
+    border-bottom-style: solid;
+}
+
+#menu {
+    display: block;
+}
+
+.monespace {
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+}
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+
+}
+
+nav ul li a {
+    display: inline-block;
+    margin: 5px 0 5px 5px;
+    color: #efefef;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+    font-size: 28px;
+}
+
+#burger {
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    width: 40px;
+    font-size: 30px;
+    line-height: 40px;
+    color: lightgray;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 2000;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    color: darkred;
+    cursor: pointer;
+    border: 0;
+    border-radius: 80px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out; /* animation, lui donner 0.2s avabt de mette l'opacité à un, en ralentissant sur la fin de l'animation */
+    opacity: 0;
+    font-size: 30px;
+}
+
+#back-to-top:hover {
+    background: #e9ebec;
+}
+
+#back-to-top.show {
+    opacity: 1;
+}
+
+#content {
+    height: 2000px;
+}
+
+
+/* ----------------------------------------------- Fin page d'ACCUEIL --------------------------------------------------*/
+
+/* ----------------------------------------------------- Sommaire ----------------------------------------------------- */
+
+#positionsommaire {
+    display: flex;
+    justify-content: center;
+}
+
+#fondsommaire {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: fit-content;
+    padding-bottom: 15px;
+}
+
+#sommaire {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    background-image: url("images/spiderman-web-background.jpg");
+    background-size: cover;
+    color: white;
+    border: 1px solid white;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.textsommaire {
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#fondsommaire h2 {
+    text-align: center;
+}
+
+#sommaire a h4 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+#sommaire a h4:hover {
+    font-size: 23px;
+}
+
+/* ------------------------------------------------- Fin Sommaire ------------------------------------------------------*/
+
+/* ------------------------------------------ Filtre noir sur image (divers)------------------------------------------- */
+
+.positionpage {
+    display: flex;
+    justify-content: center;
+    height: 110vh;
+}
+
+#imagePeter {
+    width: 100%;
+    height: 100vh; /* prend la taille entiere de la window */
+    background-image: url("images/page_univers/Spidermantitle.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 60px 0;
+}
+
+.fondnoiralpha {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 30px;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* ----------------------------------------------------- Partie ARC (livre)--------------------------------------------  */
+
+.titresarc {
+    text-align: center;
+}
+
+.centerarc {
+    text-align: center;
+}
+
+.positionmagazine {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#magazine {
+    position: fixed;
+    width: 840px;
+    height: 616px;
+    cursor: pointer;
+}
+
+#magazine div img {
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+#magazine .turn-page {
+    background-color: #3c424e;
+    background-size: 100% 100%;
+}
+
+.titrelivre {
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+
+#deuxiemecouverture {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background-image: url("images/comic_universe/deuxiemecouvbg.jpg");
+    background-position: left;
+}
+
+.comicdeuxieme {
+    text-align: center;
+}
+
+body {
+    background-color: darkred;
+}
+
+
+/* -----------------------------------------------Fin Partie ARC -------------------------------------------------------*/
+
+
+/* --------------------------------------------------Fin ARCS-----------------------------------------------------------*/
+
+#unheroadesennemis {
+    width: 100%;
+    display: flex;
+}
+
+h3 {
+    margin: 25px 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+#imageennemies {
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/page_univers/Ennemies.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+}
+
+#responsivetitle {
+    display: none;
+}
+
+#mosaiqueennemis {
+    margin: 0 auto 45px auto;
+    width: 60%;
+    height: 700px;
+    overflow: hidden;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+#octopusimg, #electroimg, #bouffonvertimg, #venomimg:hover {
+    transform: scale(1.04); /* aggrandir l'image au passage de la souris*/
+    transition: transform 0.8s ease-in-out;
+}
+
+#mosaiqueennemis img:nth-child(11n):hover {
+    transform: none;
+}
+
+
+#mosaiqueennemis img:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.8s ease-in;
+}
+
+.responsivemosaique {
+    display: none;
+}
+
+#mosaiqueennemis #spidermanimage {
+    cursor: default;
+}
+
+#venomimage {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 4px;
+    border-bottom-style: solid;
+}
+
+#ligne2 {
+    display: flex;
+    margin-bottom: 4px;
+    margin-top: 6px;
+}
+
+#spidermanimage {
+    width: 33%;
+    height: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-style: solid;
+    overflow: hidden;
+}
+
+#spidermanimage img:hover {
+    transform: none;
+}
+
+#venomtext {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 500px;
+    font-size: 13px;
+    padding: 5px 15px;
+    border: 1px solid #000;
+}
+
+#venomtext h4 {
+    font-size: 18px;
+}
+
+#venomtext p {
+    text-align: justify;
+}
+
+#quatresymbiotes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+}
+
+#quatresymbiotes img {
+    margin: 0 5px;
+}
+
+#knull {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#knull img {
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+#electroimage {
+    height: 300px;
+    border-style: solid;
+    border-left-style: none;
+    display: flex;
+    overflow: hidden;
+}
+
+#electrotext {
+    height: 300px;
+    display: none;
+    margin-left: 5px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: solid;
+    border-right-style: none;
+    font-size: 14px;
+}
+
+#electrotext p b u {
+    font-size: 16px;
+}
+
+.bouffonvertimage {
+    height: 300px;
+    display: flex;
+    border-style: solid;
+    border-right-style: none;
+    float: right;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+#bouffonverttext {
+    display: none;
+    height: 300px;
+    margin-right: 6px;
+    padding-bottom: 21px;
+    padding-left: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: solid;
+    border-left-style: none;
+    font-size: 14px;
+}
+
+#octopusimage {
+    height: 200px;
+    border-top-style: solid;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.octopusimg {
+    border-top-style: solid;
+}
+
+#octopustext {
+    display: none;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 0 0px 4px;
+    margin-bottom: 6px;
+    border: 2px solid black;
+    z-index: 8;
+}
+
+#sinisters6 {
+    height: fit-content;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+#sinisters6 img {
+    width: 384px;
+    height: 162px;
+    border: 2px solid black;
+    transform: none;
+    transition: none;
+}
+
+.slide {
+    width: 100%;
+    height: 500px;
+}
+
+
+#imageallies {
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/page_univers/Spiderman-ironman.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 30px 0;
+}
+
+.conteneur {
+    margin: 0 auto;
+    width: 60%;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+
+.reglette {
+    position: relative;
+    width: 80%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+
+#slide1 {
+    position: relative;
+}
+
+#slide2 {
+    position: relative;
+}
+
+#slide3 {
+    position: relative;
+}
+
+#Arcs, #Arcs2, #Arcs3 {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    font-size: 13px;
+    padding: 0 0 0 10px;
+}
+
+
+#Arcs2 {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    font-size: 13px;
+}
+
+
+#Arcs h2 {
+    text-align: center;
+}
+
+#Arcs2 img {
+    display: flex;
+    width: 200px;
+    height: 259px;
+    justify-content: center;
+}
+
+#Arcs3 p {
+    text-align: left;
+}
+
+#Arcs3 {
+    text-align: center;
+}
+
+#Arcs3 img {
+    width: 150px;
+    height: 220px;
+}
+
+
+.titrecenter {
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+#afficher1 {
+    opacity: 0;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    left: 40%;
+    top: 80%;
+    transition: opacity 1s;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: white;
+}
+
+#afficher1:hover {
+    width: 160px;
+    height: 60px;
+    left: 39%;
+    transition: width, 0.5s, height, 0.5s;
+}
+
+
+#afficher2, #afficher1, #afficher3 {
+    opacity: 0;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    left: 40%;
+    top: 80%;
+    transition: opacity 1s;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: white;
+}
+
+#afficher2:hover {
+    width: 160px;
+    height: 60px;
+    transition: width, 0.5s, height, 0.5s;
+}
+
+.centreimage {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.centreimage2 {
+    display: flex;
+    justify-content: center;
+}
+
+.centreimage2 img {
+    width: 260px;
+    height: 200px;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+
+.centreimage img {
+    margin: 0 5px;
+    width: 125px;
+    height: 150px;
+}
+
+.centreimagecomics {
+    display: flex;
+    justify-content: center;
+}
+
+.centreimagecomics img {
+    width: 400px;
+}
+
+.left, .right {
+    position: relative;
+    width: 40px;
+    line-height: 40px;
+    font-size: 25px;
+    z-index: 10;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    transition: 1s;
+}
+
+.cross, .cross2, .cross3 {
+    position: absolute; /* qu'il soit au-dessus de tout le reste, quel que soit le parent */
+    font-size: 15px;
+    color: black;
+    z-index: 80000;
+    cursor: pointer;
+    padding: 5px;
+    border-style: solid;
+    border-radius: 100px;
+    display: none;
+    right: 60px;
+    top: 5px;
+}
+
+.cross:hover, .cross2:hover, .cross3:hover {
+    background-color: white;
+}
+
+.left {
+    top: -250px;
+    left: 12%;
+}
+
+.left:hover {
+    background: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+.right {
+    top: -290px; /*le pousser de 290px au dessus de sa potition initial */
+    left: 85%; /* le faire se placer à 15% vers la droite de sa potition initial*/
+}
+
+.right:hover {
+    background: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+#100vh {
+    width: 100%;
+    height: 1090px;
+    background: #0c5460;
+}
+
+/* ---------------------------------------------- formulaire de contact--------------------------------------------------*/
+
+#formulaire {
+    padding: 15px 0 15px 15px;
+}
+
+form {
+    padding: 15px 15px;
+}
+
+#main {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+}
+
+#form {
+    color: #fff;
+    width: 360px;
+    height: 566px;
+    max-height: 600px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid white;
+}
+
+form input {
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid white;
+    padding-left: 5px;
+    width: 150px;
+    height: 20px
+}
+
+form #image {
+    width: 250px;
+    height: 30px;
+    padding-left: 0;
+    border-style: none;
+}
+
+#envoyer {
+    height: 30px;
+    padding-left: 0;
+}
+
+form textarea {
+    border: 1px solid white;
+    background-color: #fff;
+    color: #000000;
+    min-height: 80px;
+    height: 160px;
+    max-height: 200px;
+}
+
+#googlemaps {
+    margin: 15px;
+}
+
+#positionmessage {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 15px;
+}
+
+/* -----------------------------------------fin formulaire de contact---------------------------------------------------*/
+
+
+/* ----------------------------------------------- BLOG  ---------------------------------------------------------------*/
+
+#justifyform {
+    display: flex;
+    justify-content: center;
+    height: 65vh;
+}
+
+.center {
+    padding-top: 15px;
+    text-align: center;
+}
+
+#titrearticle {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#formarticle textarea {
+    width: 500px;
+    height: 500px
+}
+
+#publication {
+    width: 160px;
+}
+
+#getoutfooter {
+    display: flex;
+    padding: 50px 0;
+    margin-bottom: 40px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.getoutfooter {
+    height: 80vh;
+    background-color: black;
+}
+
+#cinema {
+    width: 600px;
+    height: 300px;
+    line-height: 300px;
+    opacity: 0.8;
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+#cinema:hover {
+    opacity: 1;
+    transition: opacity 1000ms;
+}
+
+#comics {
+    width: 600px;
+    height: 300px;
+    opacity: 0.8;
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+#comics:hover {
+    opacity: 1;
+    transition: opacity 1000ms;
+}
+
+#getoutfooter {
+
+    min-height: fit-content;
+    padding-bottom: 15px;
+}
+
+#getoutfooter #stylearticles {
+    width: 80%;
+    min-height: fit-content;
+    list-style: none;
+    padding: 15px;
+    font-family: Montserrat;
+}
+
+#stylearticles img {
+    max-width: 600px;
+    max-height: 300px;
+}
+
+
+#getoutfooter #stylearticles #styletitreart {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#getoutfooter #stylearticles #stylecontenuart {
+    text-align: justify;
+    border: 1px ridge white;
+    font-size: 15px;
+    padding: 15px;
+    margin-top: 15px;
+    line-height: 23px;
+}
+
+#getoutfooter #stylearticles #stylecontenuart:first-letter {
+    font-size: 180%;
+    padding-left: 15px;
+}
+
+#getoutfooter #stylearticles #stylepublicationart {
+    text-align: justify;
+    font-size: 13px;
+}
+
+#buttonadd {
+    width: 120px;
+    height: 30px;
+}
+
+#buttonadd:hover {
+    cursor: pointer;
+}
+
+/* ----------------------------------------------- Fin du Blog--------------------------------------------------------- */
+
+/* ---------------------------------------------- Galerie d'image ------------------------------------------------------*/
+
+.uploadimg input:hover {
+    cursor: pointer;
+}
+
+#fileToUpload {
+    padding: 0;
+    height: 24px;
+    width: 250px;
+}
+
+#stylesubmitgalerie {
+    height: 23px;
+    width: fit-content;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#selectimage {
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 0;
+    padding-left: 15px;
+}
+
+#getoutfooterfill ul {
+    width: 100%;
+    flex-wrap: wrap;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#getoutfooterfill img {
+    -webkit-filter: brightness(0.7);
+    -webkit-transition: all .8s ease-in-out; /* aller vite sur le début et ralentir sur la fin animation */
+}
+
+#getoutfooterfill img:hover {
+    filter: none;
+    transform: scale(1.04);
+}
+
+.listgalerie {
+    list-style: none;
+}
+
+.stylegalerie {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+    border: 2px solid white;
+    overflow: hidden;
+}
+
+.positionmagazine2 {
+    display: none;
+}
+
+
+/* ---------------------------------------- Fin galerie d'image ------------------------------------------------- */
+
+/* ----------------------------------------- Responsive 1024px ----------------------------------------------------- */
+
+/*-------------------------------------------- Page Univers --------------------------------------------------------- */
+/* Responsive 1920 px */
+
+
+/*  Fin - Responsive 1920 px */
+
+@media screen and (max-width: 1024px) {
+
+
+    #mosaiqueennemis {
+        height: 600px;
+    }
+
+    #octopusimage {
+        margin-top: 5px;
+        overflow: hidden;
+    }
+
+    #mosaiqueennemis img {
+        width: 100%;
+        height: fit-content;
+    }
+
+    #ligne2 {
+        height: 200px;
+    }
+
+    #ligne2 img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #octopustext {
+        padding-top: 2px;
+        font-size: 14px;
+    }
+
+    #sinisters6 img {
+        width: 300px;
+        height: 150px;
+    }
+
+    #knull img {
+        width: 300px;
+        height: 150px;
+    }
+
+    #electroimage {
+        overflow: hidden;
+    }
+
+    #electrotext {
+        font-size: 11px;
+    }
+
+    #bouffonverttext {
+        font-size: 11px;
+    }
+
+    .conteneur {
+        width: 960px;
+    }
+
+    #slide1 img {
+        width: 960px;
+    }
+
+
+    #Arcs, #Arcs2, #Arcs3 {
+        width: 960px;
+        padding: 0 15px;
+    }
+
+
+    .cross, .cross2, .cross3 {
+        right: 5px;
+    }
+
+    /*----------------------------------------- fin Page Univers -------------------------------------------------------*/
+    /* ----------------------------------------------index -------------------------------------------------------------*/
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    .titrehero {
+        margin-bottom: 15px;
+    }
+
+    .Spiderman_show {
+        width: 58%;
+    }
+
+    .cont1 {
+        width: 55%;
+        height: fit-content;
+        font-size: 13px;
+        margin-right: 15px;
+        margin-bottom: 20px;
+    }
+
+    .Miles_show {
+        width: 50%;
+    }
+
+    .cont2 {
+        width: 55%;
+        font-size: 13px;
+        margin-right: 15px;
+    }
+
+}
+
+
+/*-------------------------------------------- fin index ---- --------------------------------------------------------- */
+
+/* --------------------------------------- fin Responsive 1024px ------------------------------------------------------ */
+
+
+/* -------------------------------------------Responsive 780px--------------------------------------------------------- */
+
+
+@media screen and (max-width: 780px) {
+
+    /* --------------------------------------  Page Univers ----------------------------------------------------- */
+    .reglette {
+        height: 400px;
+    }
+
+    .conteneur {
+        width: 700px;
+        margin-top: 20px;
+    }
+
+
+    #afficher1 {
+        left: 280px;
+    }
+
+    #afficher2 {
+        left: 280px;
+    }
+
+    #Arcs {
+        font-size: 13px;
+        padding: 110px 0 20px 10px;
+    }
+
+    #Arcs img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .slide {
+        width: 700px;
+        height: 400px;
+    }
+
+    .reglette img {
+        width: 700px;
+        height: 400px;
+    }
+
+    #sommaire {
+        height: fit-content;
+    }
+
+    #fondsommaire {
+        height: fit-content;
+    }
+
+    #imagePeter, #imageallies, #imageennemies {
+        margin: 0;
+        width: 765px;
+        height: fit-content;
+        background-size: 765px;
+        background-repeat: no-repeat;
+    }
+
+    .fondnoiralpha {
+        width: 765px;
+        height: 420px;
+    }
+
+
+    #centreimageresponsive {
+        margin-bottom: 10px;
+        width: 125px;
+        height: 150px;
+    }
+
+    #spidermanimage {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+    #quatresymbiotesresponsive {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    #quatresymbiotes img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #electrotext {
+        font-size: 10px;
+    }
+
+    #bouffonverttext {
+        font-size: 10px;
+    }
+
+    #octopustext {
+        font-size: 13px;
+        padding-top: 20px;
+    }
+
+    .positionmagazine {
+        display: flex;
+        justify-content: right;
+    }
+
+    #magazine {
+        display: block;
+        width: 400px;
+        height: 297px;
+        margin: auto auto 30px auto;
+    }
+
+    #magazine #deuxiemecouverture .comicdeuxieme {
+        height: 297px;
+    }
+
+    #magazine img {
+        width: 350px;
+    }
+
+    #magazine div img {
+        width: 200px;
+        height: 297px;
+    }
+
+    #deuxiemecouverture {
+        display: flex;
+        padding-top: 80px;
+    }
+
+    .comicdeuxieme {
+        width: 200px;
+    }
+
+    #Arcs2 {
+        font-size: 12px;
+        margin: 50px 0 0 0;
+    }
+
+    #Arcs2 img {
+        width: 100px;
+        height: 128px;
+    }
+
+    #Arcs3 {
+        padding-top: 93px;
+    }
+
+    #Arcs3 h2 {
+        padding-top: 10px;
+    }
+
+    #Arcs3 p {
+        margin-bottom: 10px;
+    }
+
+
+    /* --------------------------------------------fin  Univers -------------------------------------------------------*/
+    /*----------------------------------------------- Index -----------------------------------------------------------*/
+    #menu {
+        display: none;
+    }
+
+    .style_contenu {
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 45px;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+
+    }
+
+    .responsivecontenuheros {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenuhero {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 60%;
+        margin-left: 40px;
+
+    }
+
+    .positioncont {
+        margin-bottom: 10px;
+    }
+
+    .Spiderman_show {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-content: center;
+    }
+
+    .Miles_show {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-content: center;
+    }
+
+    .cont1 {
+        width: 100%;
+        margin-left: 0;
+        font-size: 9.9px;
+    }
+
+    .principauxantagonistes {
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+        margin-top: 300px;
+    }
+
+    .style_contenu2 {
+        width: 90%;
+        height: fit-content;
+        margin-top: 10px;
+    }
+
+
+    .contenuhero2 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .Miles_show {
+        width: 40%;
+        border: none;
+        display: flex;
+    }
+
+    .cont2 {
+        width: 60%;
+        margin-top: 10px;
+    }
+
+    .principauxantagonistes2 {
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+        margin-top: 30px;
+    }
+
+    .antagoniste {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .antagoniste img {
+        width: 300px;
+    }
+
+    .antagoniste2 {
+        width: 300px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    .antagoniste2 img {
+        width: 300px;
+    }
+
+
+    #burger {
+        display: block;
+    }
+
+
+    nav {
+        width: 100%;
+        height: 0;
+        white-space: nowrap;
+        border: none;
+    }
+
+    nav ul {
+        position: relative;
+        top: 1px;
+        left: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    nav ul li {
+        height: 60px;
+        display: block;
+        width: 100%;
+        border-style: solid;
+        border-bottom-style: none;
+        border-top-style: none;
+        background-image: linear-gradient(to right, #fe0000, #c20023, #820326, #420f1d, #000000); /*degrade de couleur vers la droite*/
+    }
+
+    ul li:nth-child(4) {
+        border-bottom-style: solid;
+    }
+
+
+    #mosaiqueennemis {
+        display: none;
+    }
+
+    #responsivetitle {
+        display: block;
+    }
+
+
+    .responsivemosaique {
+        display: block;
+    }
+
+    #electroimageresponsive {
+        display: flex;
+        justify-content: center;
+    }
+
+    #electroimageresponsive img {
+        border: 2px solid black;
+        width: 200px;
+        height: 200px;
+    }
+
+    .miseenformeresponsive {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    #octopusimageresponsive {
+        display: flex;
+        justify-content: center;
+    }
+
+    #octopusimageresponsive img {
+        width: 400px;
+        height: 150px;
+    }
+
+    #sinisters6responsive {
+        display: flex;
+        justify-content: center;
+    }
+
+    #sinisters6responsive img {
+        width: 250px;
+        height: 120px;
+    }
+
+    #bouffonvertimageresponsive {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    #bouffonvertimageresponsive img {
+        border: 2px solid black;
+        width: 200px;
+        height: 200px;
+    }
+
+    #venomimageresponsive {
+        display: flex;
+        justify-content: center;
+    }
+
+    #venomimageresponsive img {
+        width: 400px;
+        height: 150px;
+    }
+
+    #quatresymbiotesresponsive img {
+        width: 80px;
+        height: 80px;
+        padding: 0 10px;
+        margin: 0 10px;
+    }
+
+    #knullresponsive {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+
+    #knullresponsive img {
+        width: 150px;
+        height: 100px;
+    }
+
+    /*-------------------------------------------- fin Index -----------------------------------------------------------*/
+    /*---------------------------------------- fin responsive 780px---------------------------------------------------- */
+    /*------------------------------------------- responsive 426px------------------------------------------------------*/
+    /* ---------------------------------------------Univers-------------------------------------------------------------*/
+    @media screen and (max-width: 426px) {
+
+        #menu {
+            display: none;
+        }
+
+        #titledisparait {
+            display: none;
+        }
+
+        #mosaiqueennemis {
+            display: none;
+        }
+
+        #responsivetitle {
+            display: block;
+        }
+
+
+        .responsivemosaique {
+            display: block;
+        }
+
+
+        #electroimageresponsive {
+            display: flex;
+            justify-content: center;
+        }
+
+        #electroimageresponsive img {
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+        }
+
+        .miseenformeresponsive {
+            padding: 10px;
+            font-size: 13px;
+        }
+
+        #octopusimageresponsive {
+            display: flex;
+            justify-content: center;
+        }
+
+        #octopusimageresponsive img {
+            width: 400px;
+            height: 150px;
+        }
+
+        #sinisters6responsive {
+            display: flex;
+            justify-content: center;
+        }
+
+        #sinisters6responsive img {
+            width: 250px;
+            height: 120px;
+        }
+
+        #bouffonvertimageresponsive {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        #bouffonvertimageresponsive img {
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+        }
+
+        #venomimageresponsive {
+            display: flex;
+            justify-content: center;
+        }
+
+        #venomimageresponsive img {
+            width: 400px;
+            height: 150px;
+        }
+
+
+        #quatresymbiotesresponsive img {
+            width: 80px;
+            height: 80px;
+            padding: 0 10px;
+            margin: 0 53px;
+        }
+
+        #knullresponsive {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+
+        #knullresponsive img {
+            width: 150px;
+            height: 100px;
+        }
+
+        #sommaire {
+            width:350px;
+            margin-bottom: 30px;
+        }
+
+        footer a {
+            font-size: 13px;
+        }
+
+        footer p {
+            font-size: 15px;
+        }
+
+        footer {
+            height: fit-content;
+        }
+
+        .positionmagazine {
+            display: flex;
+            justify-content: right;
+        }
+
+        #magazine {
+            display: block;
+            width: 410px;
+            height: 300px;
+            margin: 0 50px 30px 0px;
+        }
+
+        #magazine img {
+            width: 205px;
+            height: 300px;
+        }
+
+        #deuxiemecouverture {
+            padding-top: 90px;
+            height: 40px;
+            display: flex;
+            font-size: 11px;
+        }
+
+        .comicdeuxieme {
+            width: 215px;
+        }
+
+        #imagePeter, #imageallies, #imageennemies {
+            width: 425px;
+            background-repeat: no-repeat;
+            background-size: 425px;
+            height: 240px;
+        }
+
+        .fondnoiralpha {
+            width: 425px;
+            height: 240px;
+        }
+
+        #imageennemies .fondnoiralpha {
+            height: 226px;
+        }
+
+        .reglette {
+            width: 380px;
+            height: 240px;
+        }
+
+        .slide1 img .slide2 img {
+            width: 340px;
+            height: 240px;
+        }
+
+        .conteneur {
+            width: 340px;
+            margin-top: 20px;
+        }
+
+
+        #afficher1, #afficher2, #afficher3 {
+            left: 160px;
+            width: 80px;
+            height: 30px;
+            font-size: 10px;
+        }
+
+        #Arcs {
+            font-size: 10px;
+            padding: 273px 0 20px 10px;
+        }
+
+
+        #Arcs img {
+            width: 50px;
+            height: 50px;
+        }
+
+        #Arcs2 {
+            font-size: 8px;
+            padding-top: 150px;
+        }
+
+        #Arcs3 {
+            width: 400px;
+            padding: 260px 20px 0 0;
+        }
+
+        #Arcs3 p {
+            margin-bottom: 10px;
+            font-size: 8px;
+        }
+
+        #Arcs3 img {
+            width: 75px;
+            height: 100px;
+        }
+
+        .slide {
+            width: 400px;
+            height: 240px;
+        }
+
+        .reglette img {
+            width: 400px;
+            height: 240px;
+        }
+
+        .left {
+            top: -150px
+        }
+
+        .right {
+            top: -190px;
+            left: 80%;
+        }
+
+        .responsivemosaique {
+            display: block;
+        }
+
+        .Spiderman_show {
+            width: 100%;
+            height: 250px;
+        }
+
+        .Miles_show {
+            width: 100%;
+            height: 250px;
+        }
+
+        .principauxantagonistes {
+            justify-content: center;
+            margin-top: 300px;
+        }
+
+        .principauxantagonistes div {
+            width: 100px;
+            font-size: 9px;
+            text-align: justify;
+        }
+
+        .antagoniste {
+            margin-left: 25px;
+            height: 175px;
+            padding-bottom: 5px;
+        }
+
+
+        .antagoniste img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .principauxantagonistes2 {
+            justify-content: center;
+        }
+
+        .principauxantagonistes2 div {
+            width: 100px;
+            font-size: 9px;
+            text-align: justify;
+        }
+
+        .antagoniste2 {
+            margin-left: 15px;
+            height: 175px;
+            padding-bottom: 5px;
+        }
+
+
+        .antagoniste2 img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #getoutfooter {
+            flex-wrap: wrap;
+
+        }
+
+        #getoutfooter cinema, comics {
+            border: none;
+        }
+
+        #getoutfooter img {
+            width: 400px;
+            height: 280px;
+        }
+
+        @media screen and (max-width: 376px) {
+
+            #imageennemies, #imageallies, #imagePeter {
+                width: 375px;
+                height: 200px;
+                background-size: 375px;
+            }
+
+            .fondnoiralpha {
+                height: 200px;
+            }
+
+
+            #magazine {
+                display: block;
+                width: 410px;
+                height: 300px;
+                margin: 0 25px 30px 25px;
+            }
+
+            #magazine div img{
+                width:170px;
+            }
+        }
+    }
+}
+
+/* -------------------------------------------------Fin Univers--------------------------------------------------------- */
+/* --------------------------------------------- fin Responsive 426 px ------------------------------------------------- */
